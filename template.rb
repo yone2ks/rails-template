@@ -29,7 +29,7 @@ gem_group :development, :test do
   gem "factory_girl_rails" , "~> 4.4.1"    # テストデータの作成
 end
 
-run 'bundle install'
+run 'bundle install --path vendor/bundle'
 generate 'rspec:install'
 
 # git initalize setting

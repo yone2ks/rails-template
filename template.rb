@@ -6,6 +6,9 @@
 # delete README.rdoc 
 run 'rm README.rdoc'
 
+# HTML Template Engine
+gem 'slim-rails'
+
 # Bootstrap & Bootswatch & font-awesome
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'

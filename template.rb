@@ -13,7 +13,8 @@ gem 'slim-rails'
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
 gem 'font-awesome-rails'
-
+# simple form
+gem 'simple_form'
 # turbolinks support
 gem 'jquery-turbolinks'
 
@@ -30,7 +31,9 @@ gem_group :development, :test do
   gem "factory_girl_rails" , "~> 4.4.1"    # テストデータの作成
 end
 
+run 'bundle config build.nokogiri --use-system-libraries'
 run 'bundle install --path vendor/bundle'
+generate 'simple_form:install'
 generate 'rspec:install'
 
 # git initalize setting

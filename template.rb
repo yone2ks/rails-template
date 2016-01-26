@@ -6,8 +6,6 @@
 # delete README.rdoc 
 run 'rm README.rdoc'
 
-gem 'rails', '4.2.4'
-
 # Bootstrap & Bootswatch & font-awesome
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'

@@ -10,7 +10,7 @@ run 'rm README.rdoc'
 gem 'slim-rails'
 
 # Bootstrap & Bootswatch & font-awesome
-gem 'bootstrap-sass'
+gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 gem 'bootswatch-rails'
 gem 'font-awesome-rails'
 # simple form

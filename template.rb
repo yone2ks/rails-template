@@ -31,9 +31,10 @@ gem_group :development, :test do
   gem "factory_girl_rails" , "~> 4.4.1"    # テストデータの作成
 end
 
-run 'bundle config build.nokogiri --use-system-libraries'
+# run 'bundle config build.nokogiri --use-system-libraries' # MacOS and Windows Cygwin
+run 'bundle config build.nokogiri' # Linux
 run 'bundle install --path vendor/bundle'
-generate 'simple_form:install'
+generate 'simple_form:install --bootstrap'
 generate 'rspec:install'
 
 # git initalize setting
